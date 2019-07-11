@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- ESTILOS BOOTSTRAP -->
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!-- FONTAWESOME  -->
+        <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+        <!-- FUENTES -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet"> 
+        <!-- MIS ESTILOS -->
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- JQUERY -->
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <!-- BOOTSTRAP -->
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- MIS SCRIPTS -->
+        <script src="./js/script.js"></script>
+        
+        <title>Sebastián Aguirre</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header>
+            <div class="container">
+                <!-- LOGO + MENU -->
+                <div class="row nav rounded-top align-items-stretch justify-content-between">
+                    <!-- Logo -Nombre - Detalle -->
+                    <div class="col-md-12 col-lg logo d-flex align-items-center justify-content-center justify-content-lg-start">
+                        <h2>Sebastián Aguirre</h2>
+                        <span class="icono mr-2 ml-2 d-flex align-items-center"><i class="fas fa-circle"></i></span>
+                        <p>Técnico Superior en Programación</p>
+                    </div>
+
+                    <!-- MENU -->
+                    <nav class="col-md-12 col-lg-auto menu d-flex align-items-stretch flex-wrap flex-sm-nowrap">
+                        <a href="#portafolio" class="c-1 d-flex align-items-center">
+                            <div class="d-flex flex-column text-center">
+                                <span>Portafolio</span>
+                                <i class="icono fas fa-briefcase"></i>
+                            </div>
+                        </a>
+                        <a href="#sobre-mi" class="c-2 d-flex align-items-center">
+                            <div class="d-flex flex-column text-center">
+                                <span>Sobre mí</span>
+                                <i class="icono fas fa-user"></i>
+                            </div>
+                        </a>
+                        <a href="#contacto" class="c-3 d-flex align-items-center">
+                            <div class="d-flex flex-column text-center">
+                                <span>Contacto</span>
+                                <i class="icono fas fa-envelope"></i>
+                            </div>
+                        </a>
+                    </nav>
+                </div>
+
+                <!-- SLIDER -->
+                <div class="row slider">
+                    <div class="col">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- INDICATORS -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/img-1.jpg" alt="" class="d-block img-fluid">
+                                    <div class="carousel-caption">
+                                        <!-- <h3>Lorem ipsum dolor</h3>
+                                        <p>Lorem ipsum dolor</p> -->
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/img-2.jpg" alt="" class="d-block img-fluid">
+                                    <div class="carousel-caption">
+                                        <!-- <h3>Lorem ipsum dolor</h3>
+                                        <p>Lorem ipsum dolor</p> -->
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/img-3.jpg" alt="" class="d-block img-fluid">
+                                    <div class="carousel-caption">
+                                        <!-- <h3>Lorem ipsum dolor</h3>
+                                        <p>Lorem ipsum dolor</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Siguiente</span>
+                            </a>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <main>
+            <div class="container">
+                <!-- PORTAFOLIO -->
+                <div class="row portafolio" id="portafolio">
+                    <div class="col">
+                        <h2 class="titulo">Portafolio</h2>
+                        <div class="row galeria justify-content-center">
+                            <div class="col-6 col-lg-4 container-image">
+                                <a href="#" data-toggle='modal' data-target="#modal">
+                                    <img src="./img/noticias.png" alt="" class="img-fluid imagen" id="" name='Noticias'>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- The Modal -->
+                <div class="modal fade" id="modal">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="modal-title"></h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <img src="" alt="" class="img-fluid" id="imagen-modal">
+                            </div>
+                            
+                            <!-- Modal footer -->
+                            <div class="modal-footer d-flex justify-content-center flex-column">
+                                <p id="modal-description"></p>
+                                <p>
+                                    <a href='' target="_blank" id="modal-link">Enlace al sitio</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SOBRE MI -->
+                <div class="row sobre-mi align-items-center" id="sobre-mi">
+                    <!-- Foto -->
+                    <div class="col-12 col-lg-4 foto">
+                        <img src="./img/foto.jpg" class="rounded-circle img-fluid" alt="">
+                        <p class="nombre">Sebastián Aguirre</p>
+                    </div>
+                    <!-- Info -->
+                    <div class="col-12 col-lg-8 info">
+                        <!-- Sobre mi -->
+                        <h2 class="titulo">Sobre mí</h2>
+                        <!-- Resumen -->
+                        <p class="resumen">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos accusamus nostrum, quod sapiente quas maiores quia temporibus perferendis rerum quaerat architecto vero vitae dolorem pariatur dignissimos maxime earum dolores recusandae!</p>
+                        <p class="resumen">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos accusamus nostrum, quod sapiente quas maiores quia temporibus perferendis rerum quaerat architecto vero vitae dolorem pariatur dignissimos maxime earum dolores recusandae!</p>
+                        <!-- Barra progresiva -->
+                        <p class="label">HTML</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%;">50%</div>
+                        </div>
+                        <p class="label">CSS</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%;">60%</div>
+                        </div>
+                        <p class="label">JAVASCRIPT</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%;">60%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTACTO -->
+                <div class="row contacto justify-content-center" id="contacto">
+                    <div class="col-12 col-lg-8">
+                        <h2 class="titulo">Contacto</h2>
+                        <form action="" class="formulario">
+                            <div class="form-group row">
+                                <div class="col-12 col-md-6">
+                                    <input type="text" placeholder="Nombre" id="txt-name" required>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <input type="email" placeholder="Correo" id="txt-email" required>
+                                </div>
+                            </div>
+                            <textarea name="" id="" placeholder="Mensaje" id="txt-msg" required></textarea>
+                            <div class="form-group d-flex justify-content-center">
+                                <input type="submit" value="Enviar" class="boton" id="btn-enviar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <!-- REDES SOCIALES -->
+                <div class="row redes-sociales justify-content-center">
+                    <div class="col-auto">
+                        <a href="https://www.facebook.com/seba1705" target="_blank" class="icono facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/sebaaguirre2012/" target="_blank" class="icono instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/seba1705/"target="_blank" class="icono linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Sebastian1705" target="_blank" class="icono github"><i class="fab fa-github-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,293 @@
+body{
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{ margin-top: 30px; }
+
+header .nav{
+    min-height: 80px;
+    overflow: hidden;
+    background: #fff;
+}
+
+/********* LOGO *********/
+
+header .logo h2,
+header .logo span,
+header .logo p{
+    font-size: 16px;
+    display: inline-block;
+    margin: 0;
+}
+
+header .logo h2{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+header .logo .icono i{ 
+    color: #bfbfbf; 
+    font-size: 0.3rem;
+}
+
+header .logo p{ color: #777777; }
+
+/********* MENU *********/
+
+header .menu { padding: 0; }
+
+header .menu a{
+    display: block;
+    text-decoration: none;
+    padding: 0 30px;
+    color: #fff;
+}
+
+header .menu a div .icono{ 
+    font-size: 0.8rem;
+    padding: 5px;
+}
+
+header .menu a div span{ font-weight: 600; }
+
+header .menu .c-1{ background: #3da5e2; }
+header .menu .c-2{ background: #005385; }
+header .menu .c-3{ background: #003855; }
+
+header .menu .c-1:hover{ background: #1ba0ef; }
+header .menu .c-2:hover{ background: #00426a; }
+header .menu .c-3:hover{ background: #002d44; }
+
+/********* SLIDER *********/
+
+.slider{ margin-bottom: 40px; }
+
+.slider .col{ padding: 0; }
+
+/********* PORTAFOLIO *********/
+
+.portafolio{
+    background: #fff;
+    border-top: 5px solid #3da5e2;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.portafolio .titulo{
+    padding: 40px 0;
+    text-align: center;
+    color: #3da5e2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.portafolio .galeria .container-image{
+    margin-bottom: 40px;
+    max-height: 180px;
+    overflow: hidden;
+}
+
+.portafolio .galeria .container-image a{
+    display: inline-block;
+    background: #3da5e2;
+}
+
+.portafolio .galeria .container-image:hover img{
+    opacity: 0.3;
+}
+
+/********* SOBRE MI *********/
+
+.sobre-mi{
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.sobre-mi .foto{ text-align: center; }
+
+.sobre-mi .foto img{ 
+    margin-bottom: 30px;
+    height: 250px;
+}
+
+.sobre-mi .foto .nombre{
+    color: #545454;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.sobre-mi .info .titulo{
+    color: #005385;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre-mi .info .resumen{ letter-spacing: 1px; }
+
+.sobre-mi .info .label{
+    font-size: 18px;
+    font-weight: 600;
+    color: #005385;
+    margin-bottom: 10px;
+}
+
+.sobre-mi .info .progress{
+    background: #005385;
+    border-radius: 0px;
+    margin-bottom: 15px;
+}
+
+.sobre-mi .info .progress-bar{
+    background: #3da5e2;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 25px;
+}
+
+/********* CONTACTO *********/
+
+.contacto{
+    padding: 40px 0;
+    border-top: 1px solid #cbcbcb;
+    margin-bottom: 40px;
+}
+
+.contacto .titulo{
+    color: #003855;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contacto .form-group{ margin-bottom: 0; }
+
+.formulario input[type='text'],
+.formulario input[type='email'],
+.formulario textarea{
+    padding: 15px;
+    border: none;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+}
+
+.formulario textarea{
+    height: 150px;
+    min-height: 150px;
+    max-height: 250px;
+}
+
+.formulario .boton{
+    background: #3da5e2;
+    border: none;
+    padding: 7px 30px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    width: auto;
+}
+
+.formulario .boton:hover{ background: #1ba0ef; }
+
+/********* REDES SOCIALES *********/
+
+.redes-sociales{
+    border-top: 1px solid #cbcbcb;
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+.redes-sociales .icono{
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    line-height: 100px;
+    color: #fff;
+    text-align: center;
+    background: #cbcbcb;
+    display: inline-block;
+    margin: 0px 20px;
+    text-decoration: none;
+    border-radius: 100%;
+    transition: all .3s ease;
+}
+
+.redes-sociales .facebook{ background: #3b5998; }
+.redes-sociales .instagram{ background: #833ab4; }
+.redes-sociales .github{ background: #211f1f; }
+.redes-sociales .linkedin{ background: #0e72a8; }
+
+/********* MEDIA QUERIES *********/
+
+/********* DISPOSITIVO LG *********/
+
+@media screen and (max-width: 992px) {
+    .logo { height: 76px; }
+
+    .menu{ min-height: 76px; }
+
+    .menu a{ width: 100%; }
+
+    .menu a div{ width: 100%; }
+
+    .sobre-mi .foto img{
+        height: 200px;
+        
+    }
+}
+
+/********* DISPOSITIVO MD *********/
+
+@media screen and (max-width: 767px) {
+    .redes-sociales .icono{
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+        font-size: 25px;
+    }
+    
+}
+
+/********* DISPOSITIVO SM *********/
+
+@media screen and (max-width: 575px) {
+    header{
+        margin-top: 0;
+        text-align: center;
+    }
+
+    header .logo h2,
+    header .logo p{
+        font-size: 12px;
+    }
+
+    .redes-sociales .icono{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+}
+
+/********* DISPOSITIVO SM *********/
+
+@media screen and (max-width: 420px) {
+    header{
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .redes-sociales .icono{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        margin: 5px;
+    }
+}
