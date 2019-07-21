@@ -6,6 +6,10 @@ const descripcionDeMisProyectos = {
     Reacttr : {
         descripcion : 'Es una aplicación tipo Tweeter, desarrolada con React y basada en componentes. Integrada con Firebase, para el uso de la base de datos y la autenticación con GitHub.',
         enlace : 'https://sebastian-reacttr.firebaseapp.com/'
+    },
+    Comics : {
+        descripcion : 'Es una aplicación de una sola página (Single Page Application), creada en Angular usando el CLI (Command Line Interface)',
+        enlace : 'https://sebastian-comics.netlify.com'
     }
 }
 
