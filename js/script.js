@@ -5,7 +5,7 @@ const descripcionDeMisProyectos = {
     },
     Reacttr : {
         descripcion : 'Es una aplicación tipo Tweeter, desarrolada con React y basada en componentes. Integrada con Firebase, para el uso de la base de datos y la autenticación con GitHub.',
-        enlace : 'https://sebastian-reacttr.web.app/'
+        enlace : 'https://sebastian-reacttr.firebaseapp.com/'
     }
 }
 
