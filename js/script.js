@@ -15,6 +15,33 @@ const descripcionDeMisProyectos = {
 
 $( () => {
     $('.galeria .container-image').click(abrirModalImg);
+    $('#formulario').bootstrapValidator({
+        message: 'Este valor no es valido',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+    
+        fields: {
+            nombre: {
+                validators: {
+                    notEmpty: {
+                        message: 'El nombre de usuario es requerido'
+                    }
+                }
+            },
+    
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'La contraseña es requerida'
+                    }
+                }
+            }
+        }
+    
+    });
 });
 
 const abrirModalImg = e => {
@@ -26,3 +53,30 @@ const abrirModalImg = e => {
     $('#modal-link').attr('href', descripcionDeMisProyectos[name].enlace)
 }
 
+$('#formulario').bootstrapValidator({
+    message: 'Este valor no es valido',
+    feedbackIcons: {
+        valid: 'glyphicon glyphicon-ok',
+        invalid: 'glyphicon glyphicon-remove',
+        validating: 'glyphicon glyphicon-refresh'
+    },
+
+    fields: {
+        nombre: {
+            validators: {
+                notEmpty: {
+                    message: 'El nombre de usuario es requerido'
+                }
+            }
+        },
+
+        email: {
+            validators: {
+                notEmpty: {
+                    message: 'La contraseña es requerida'
+                }
+            }
+        }
+    }
+
+});

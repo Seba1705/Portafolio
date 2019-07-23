@@ -204,10 +204,10 @@ header .menu .c-3:hover{ background: #002d44; }
 }
 
 .redes-sociales .icono{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     font-size: 40px;
-    line-height: 100px;
+    line-height: 80px;
     color: #fff;
     text-align: center;
     background: #cbcbcb;
@@ -283,11 +283,4 @@ header .menu .c-3:hover{ background: #002d44; }
         text-align: center;
     }
 
-    .redes-sociales .icono{
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        font-size: 20px;
-        margin: 5px;
-    }
 }
