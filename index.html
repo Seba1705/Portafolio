@@ -4,16 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- ESTILOS BOOTSTRAP -->
-        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <!-- FONTAWESOME  -->
-        <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-        <!-- FUENTES -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet"> 
-        <!-- MIS ESTILOS -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
         <link rel="stylesheet" href="./css/style.css">
-       
-        <title>Sebastián Aguirre</title>
+
+        <title>Sebasti&aacuten Aguirre</title>
     </head>
     <body>
         <!-- HEADER -->
@@ -23,9 +23,9 @@
                 <div class="row nav rounded-top align-items-stretch justify-content-between">
                     <!-- Logo -Nombre - Detalle -->
                     <div class="col-md-12 col-lg logo d-flex align-items-center justify-content-center justify-content-lg-start">
-                        <h2>Sebastián Aguirre</h2>
+                        <h2>Sebasti&aacuten Aguirre</h2>
                         <span class="icono mr-2 ml-2 d-flex align-items-center"><i class="fas fa-circle"></i></span>
-                        <p>Técnico Universitario en Programación</p>
+                        <p>Técnico Universitario en Programaci&oacuten</p>
                     </div>
 
                     <!-- MENU -->
@@ -50,7 +50,6 @@
                         </a>
                     </nav>
                 </div>
-
                 <!-- SLIDER -->
                 <div class="row slider">
                     <div class="col">
@@ -99,7 +98,6 @@
                 </div>
             </div>
         </header>
-
         <!-- MAIN -->
         <main>
             <div class="container">
@@ -107,117 +105,96 @@
                 <div class="row portafolio" id="portafolio">
                     <div class="col">
                         <h2 class="titulo">Portafolio</h2>
-                        <div class="row galeria justify-content-center">
-
-                            <div class="card" style="width: 18rem;">
-                                <img src="./img/noticias.png" class="card-img-top" alt="...">
+                        <div class="row justify-content-center cards">
+                            <!-- NOTICIAS -->
+                            <div class="card m-2" style="width: 18rem;">
+                                <img src="./img/noticias.png" class="card-img-top" alt="Búsqueda de Noticias">
                                 <div class="card-body">
-                                    <h5 class="card-title">Búsqueda de Noticias </h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h3 class="card-title">Búsqueda de Noticias </h3>
+                                    <p class="card-text">Es un simple portal de noticias argentinas. Ralizado con React y Materialize.</p>
+                                    <a href="https://sebastian-noticias.netlify.com" target="_blank" class="btn btn-primary">Enlace al sitio</a>
                                 </div>
                             </div>
-
-                            <div class="col-12 col-md-6 col-lg-4 container-image">
-                                <a href="#" data-toggle='modal' data-target="#modal">
-                                    <img src="./img/noticias.png" alt="Noticias" class="img-fluid imagen" id="" name='Noticias'>
-                                </a>
+                            <!-- REACTTR -->
+                            <div class="card m-2" style="width: 18rem;">
+                                <img src="./img/reacttr.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">Reacttr </h3>
+                                    <p class="card-text">Es una aplicación tipo Tweeter, desarrolada con React y basada en componentes. Integrada con Firebase, para el uso de la base de datos y la autenticación con GitHub.</p>
+                                    <a href="https://sebastian-reacttr.firebaseapp.com" target="_blank" class="btn btn-primary">Enlace al sitio</a>
+                                </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4 container-image">
-                                <a href="#" data-toggle='modal' data-target="#modal">
-                                    <img src="./img/reacttr.png" alt="Reacttr" class="img-fluid imagen" id="" name='Reacttr'>
-                                </a>
+                            <!-- COMICS -->
+                            <div class="card m-2" style="width: 18rem;">
+                                <img src="./img/comics.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">Comics </h3>
+                                    <p class="card-text">Es una aplicación de una sola página (Single Page Application), creada en Angular usando el CLI (Command Line Interface)</p>
+                                    <a href="https://sebastian-comics.netlify.com" target="_blank" class="btn btn-primary">Enlace al sitio</a>
+                                </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4 container-image">
-                                <a href="#" data-toggle='modal' data-target="#modal">
-                                    <img src="./img/comics.png" alt="Comics" class="img-fluid imagen" id="" name='Comics'>
-                                </a>
+                            <!-- PUNTOS DE INTERES -->
+                            <div class="card m-2" style="width: 18rem;">
+                                <img src="./img/comics.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">Puntos de Intr&eacutes </h3>
+                                    <p class="card-text">Aplicaciacuten que permite agregar y elimianar marcadores en el mapa. Se utiliza la Api de Google Maps y base de datos del navegador.</p>
+                                    <a href="https://puntos-de-interes.netlify.com/" target="_blank" class="btn btn-primary">Enlace al sitio</a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- The Modal -->
-                <div class="modal fade" id="modal">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <!-- Modal Header -->
-                            <div class="modal-header">
-                                <h4 class="modal-title" id="modal-title"></h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-                            
-                            <!-- Modal body -->
-                            <div class="modal-body">
-                                <img src="" alt="" class="img-fluid" id="imagen-modal">
-                            </div>
-                            
-                            <!-- Modal footer -->
-                            <div class="modal-footer d-flex justify-content-center flex-column">
-                                <p id="modal-description"></p>
-                                <p>
-                                    <a href='' target="_blank" id="modal-link">Enlace al sitio</a>
-                                </p>
+                            <!-- MERN STACK -->
+                            <div class="card m-2" style="width: 18rem;">
+                                <img src="./img/comics.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">Mern Task </h3>
+                                    <p class="card-text">Es una aplicaci&oacuten que permite agregar, modificar y eliminar tareas.</p>
+                                    <a href="https://sna-task-react.herokuapp.com/" target="_blank" class="btn btn-primary">Enlace al sitio</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                </div>
                 <!-- SOBRE MI -->
                 <div class="row sobre-mi align-items-center" id="sobre-mi">
-                    <!-- Foto -->
-                    <div class="col-12 col-lg-4 foto">
-                        <img src="./img/foto.jpg" class="rounded-circle img-fluid" alt="">
-                        <p class="nombre">Sebastián Aguirre</p>
-                    </div>
-                    <!-- Info -->
-                    <div class="col-12 col-lg-8 info">
-                        <!-- Sobre mi -->
-                        <h2 class="titulo">Sobre mí</h2>
-                        <!-- Resumen -->
-                        <p class="resumen">Mi nombre es <strong>Sebastián</strong>, soy estudiante de Programación en la Facultad Regional Avellaneda de la Universidad Tecnológica Nacional. Me apasiona la informática, el desarrollo y las nuevas tecnologías, y me esfuerzo por capacitarme día a día para convertirme en un desarrollador profesional.</p>
-                        <p class="resumen">Soy entusiasta, autodidacta y disfruto aprender y ver los resultados en cada proyecto que encaro.</p>
-                        <!-- Barra progresiva -->
-                        <p class="label">HTML</p>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 50%;">50%</div>
-                        </div>
-                        <p class="label">CSS</p>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 60%;">60%</div>
-                        </div>
-                        <p class="label">JAVASCRIPT</p>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 60%;">60%</div>
-                        </div>
-                    </div>
+                <!-- Foto -->
+                <div class="col-12 col-lg-4 foto">
+                    <img src="./img/foto.jpg" class="rounded-circle img-fluid" alt="">
+                    <p class="nombre">Sebastián Aguirre</p>
                 </div>
-
-                <!-- CONTACTO -->
-                <div class="row contacto justify-content-center" id="contacto">
-                    <div class="col-12 col-lg-8">
-                        <h2 class="titulo">Contacto</h2>
-                        <form action="" class="formulario" id="formulario">
-                            <div class="form-group row">
-                                <div class="col-12 col-md-6">
-                                    <input type="text" placeholder="Nombre" id="txt-name" name="nombre" class="" required />
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <input type="email" placeholder="Correo" id="txt-email" name="email" required />
-                                </div>
-                            </div>
-                            <textarea name="" id="" placeholder="Mensaje" id="txt-msg"></textarea>
-                            <div class="form-group d-flex justify-content-center">
-                                <input type="submit" value="Enviar" class="boton" id="btn-enviar" name='mensaje' required />
-                            </div>
-                        </form>
-                    </div>
+                <!-- Info -->
+                <div class="col-12 col-lg-8 info">
+                    <!-- Sobre mi -->
+                    <h2 class="titulo">Sobre mí</h2>
+                    <!-- Resumen -->
+                    <p class="resumen">Mi nombre es <strong>Sebastián</strong>, soy estudiante de Programación en la Facultad Regional Avellaneda de la Universidad Tecnológica Nacional.</p>
+                    <p class="resumen">Me apasiona la informática, el desarrollo y las nuevas tecnologías, y me esfuerzo por capacitarme día a día para convertirme en un desarrollador profesional.</p>
+                    <p class="resumen">Soy entusiasta, autodidacta y disfruto aprender y ver los resultados en cada proyecto que encaro.</p>
+                    <p class="resumen"></p>
                 </div>
             </div>
-        </main>
-
-        <!-- FOOTER -->
+        </main> 
         <footer>
+             <!-- CONTACTO -->
+             <div class="row contacto justify-content-center" id="contacto">
+                <div class="col-12 col-lg-8">
+                    <h2 class="titulo">Contacto</h2>
+                    <form action="" class="formulario" id="formulario">
+                        <div class="form-group row">
+                            <div class="col-12 col-md-6">
+                                <input type="text" placeholder="Nombre" id="txt-name" name="nombre" class="" required />
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="email" placeholder="Correo" id="txt-email" name="email" required />
+                            </div>
+                        </div>
+                        <textarea name="" id="" placeholder="Mensaje" id="txt-msg"></textarea>
+                        <div class="form-group d-flex justify-content-center">
+                            <input type="submit" value="Enviar" class="boton" id="btn-enviar" name='mensaje' required />
+                        </div>
+                    </form>
+                </div>
+            </div>
             <div class="container">
                 <!-- REDES SOCIALES -->
                 <div class="row redes-sociales justify-content-center">
@@ -230,13 +207,9 @@
                 </div>
             </div>
         </footer>
-    
-
-         <!-- JQUERY -->
-         <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-         <!-- BOOTSTRAP -->
-         <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-         <!-- MIS SCRIPTS -->
-         <script src="./js/script.js"></script>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
